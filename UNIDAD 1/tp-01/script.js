@@ -1,4 +1,4 @@
-window.addEventListener('load', function(){
+/* window.addEventListener('load', function(){
 
     let elemento = document.getElementById('secure-type');
 
@@ -14,4 +14,23 @@ window.addEventListener('load', function(){
     })
     
 }
-)
+);
+ */
+
+
+
+function cambioDeSeguro(){
+
+   /*  console.log('hola') */
+    let valor = document.getElementById('secure-type').value
+
+    if (valor == 1){
+        document.querySelector('.labinp h4').innerHTML = '$500'
+    } else if (valor == 2) {
+        document.querySelector('.labinp h4').innerHTML = '$1000'
+    } else if (valor == 3) {
+        document.querySelector('.labinp h4').innerHTML = '$1500'
+    }
+    
+
+}
